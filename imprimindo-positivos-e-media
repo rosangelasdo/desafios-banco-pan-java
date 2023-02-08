@@ -1,0 +1,25 @@
+	
+  public static void main(String[] args) throws IOException {
+     Scanner leitor = new Scanner(System.in);
+     int cont = 0;
+     double media = 0;
+     double x;
+     int soma = 0;
+     int numero =0;
+
+         while (leitor.hasNext()) {
+            x = leitor.nextDouble();
+            if (x > 0) {
+                media += x;
+                cont++;
+            }
+        }
+     //
+        media = media / cont;
+        System.out.println(cont + " valores positivos");
+        System.out.println(String.format("%.1f", media));
+    }
+	
+}
+
+// Obtive ajuda para melhorar o código - no ambiente DISCORD.
